@@ -58,7 +58,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where the Crawdads Sing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ys-1Q-vh6">
-                                <rect key="frame" x="131" y="159" width="240" height="33"/>
+                                <rect key="frame" x="131" y="167" width="240" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -123,7 +123,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fld-Bp-2IN">
                                 <rect key="frame" x="130" y="216" width="241" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">In a quiet town on the North Carolina coast in 1969, a young woman who survived alone in the marsh becomes a murder suspect.
 
 </string>
@@ -134,7 +134,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jKF-2p-GoU">
                                 <rect key="frame" x="130" y="416" width="274" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Full of empowering wisdom from one of Silicon Valley's first female African American CEOs, this inspiring leadership book offers a blueprint for how to achieve your personal and professional goals.
 </string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -144,7 +144,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="icx-3A-FCO">
                                 <rect key="frame" x="130" y="632" width="258" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">The Index Card: Why Personal Finance Doesn't Have to Be Complicated is a personal finance book written by Helaine Olen and Harold Pollack that was published in 2016. The book is based on pillars of advice Pollack wrote in 2013 on an index card.
 
 </string>
@@ -152,23 +152,68 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DE-FO-jx9">
-                                <rect key="frame" x="76" y="324" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="👍"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJP-A3-0Im">
-                                <rect key="frame" x="20" y="324" width="83" height="27"/>
+                                <rect key="frame" x="27" y="322" width="21" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="button" image="hand.thumbsup.fill" catalog="system"/>
+                                <state key="normal" image="hand.thumbsup" catalog="system"/>
+                                <connections>
+                                    <action selector="book1LikeButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ixf-va-m5l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqY-he-V3k">
+                                <rect key="frame" x="80" y="324" width="21" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand.thumbsdown" catalog="system"/>
+                                <connections>
+                                    <action selector="book1DislikeButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Dtf-hE-Iy7"/>
+                                    <action selector="book1LikeButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="kAv-BG-Bmj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2o-G2-hGa">
+                                <rect key="frame" x="27" y="519" width="21" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand.thumbsup" catalog="system"/>
+                                <connections>
+                                    <action selector="book2LikeButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="zMr-5r-arV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPa-EU-OLI">
+                                <rect key="frame" x="80" y="519" width="21" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand.thumbsdown" catalog="system"/>
+                                <connections>
+                                    <action selector="book2DislikeButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="DTd-d7-9L5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H18-uJ-rxf">
+                                <rect key="frame" x="27" y="737" width="21" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand.thumbsup" catalog="system"/>
+                                <connections>
+                                    <action selector="book3LikeButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="gM1-Wp-aYn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VN1-Ej-ZoF">
+                                <rect key="frame" x="80" y="737" width="21" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hand.thumbsdown" catalog="system"/>
+                                <connections>
+                                    <action selector="book3DislikeButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="1sc-za-PX6"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.91932731866836548" blue="0.91635125875473022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="book1DislikeButton" destination="nqY-he-V3k" id="K6Q-gt-QOg"/>
+                        <outlet property="book1LikeButton" destination="VJP-A3-0Im" id="uGB-L1-RcV"/>
+                        <outlet property="book2DislikeButton" destination="WPa-EU-OLI" id="YEL-VK-Pnf"/>
+                        <outlet property="book2LikeButton" destination="N2o-G2-hGa" id="gK2-nM-0X7"/>
+                        <outlet property="book3DislikeButton" destination="VN1-Ej-ZoF" id="vlU-dd-2sp"/>
+                        <outlet property="book3LikeButton" destination="H18-uJ-rxf" id="MLf-QU-BRh"/>
                         <outlet property="bookAuthorOne" destination="ckr-11-NLg" id="3kA-lg-FPo"/>
                         <outlet property="bookAuthorThree" destination="ntq-4F-HvV" id="7tD-OC-f2r"/>
                         <outlet property="bookAuthorTwo" destination="Lms-2C-1Zv" id="NRB-Zf-8bS"/>
@@ -264,7 +309,8 @@
         <image name="book2" width="106" height="160"/>
         <image name="book3" width="354" height="499"/>
         <image name="first" width="30" height="30"/>
-        <image name="hand.thumbsup.fill" catalog="system" width="128" height="124"/>
+        <image name="hand.thumbsdown" catalog="system" width="128" height="128"/>
+        <image name="hand.thumbsup" catalog="system" width="128" height="128"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
