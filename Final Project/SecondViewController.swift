@@ -27,6 +27,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate & 
         imageProfileButton.setImage(UIImage(systemName: "clearImage"), for: .normal)
        }*/
     
+    @IBOutlet weak var luna: UIImageView!
     
     @IBOutlet weak var imageProfileButtonOutlet: UIButton!
     @IBAction func imageProfileButtonTapped(_ sender: Any) {
