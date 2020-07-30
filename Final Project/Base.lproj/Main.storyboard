@@ -202,7 +202,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.91764705882352937" green="0.91932731866836548" blue="0.91635125875473022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.9020729289821019" green="0.98028999395869731" blue="0.989133827735723" alpha="0.94344190140845074" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
@@ -232,7 +232,7 @@
             </objects>
             <point key="canvasLocation" x="747.82608695652175" y="-696.42857142857144"/>
         </scene>
-        <!--Community-->
+        <!--Profile-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -287,8 +287,8 @@
                                 <rect key="frame" x="156" y="471" width="102" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qb-zH-WlH">
-                                <rect key="frame" x="273" y="471" width="102" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shdjfkl" translatesAutoresizingMaskIntoConstraints="NO" id="4qb-zH-WlH">
+                                <rect key="frame" x="273" y="471" width="105" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDD-mo-jgr">
@@ -309,12 +309,6 @@
                                     <action selector="book2ButtonTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="mkP-7O-d8N"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfD-oS-L0H">
-                                <rect key="frame" x="309" y="596" width="30" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="+"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chQ-oO-UMf">
                                 <rect key="frame" x="50" y="108" width="120" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -324,8 +318,67 @@
                                     <action selector="imageProfileButtonTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Yft-Au-xII"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Environment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufk-jD-32f">
+                                <rect key="frame" x="50" y="308" width="96" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40140250094164681" green="0.71302218264248707" blue="0.19204177545573559" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Finance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxp-JK-2r7">
+                                <rect key="frame" x="177" y="308" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.024240864564473982" green="0.71302218264248707" blue="0.7050428537635498" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Romance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhB-2P-OvN">
+                                <rect key="frame" x="273" y="308" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.54624885954633351" blue="0.65426489300312762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Women Empowerment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IU2-ph-SmU">
+                                <rect key="frame" x="48" y="351" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.66370589278391923" green="0.71946317573981045" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4f-cN-y1b">
+                                <rect key="frame" x="254" y="351" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.78409014148145384" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Books Read" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqq-c5-kDZ">
+                                <rect key="frame" x="50" y="660" width="123" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jl7-xj-8Uj">
+                                <rect key="frame" x="38" y="724" width="102" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yev-0i-Ogv">
+                                <rect key="frame" x="156" y="724" width="102" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qfd-xU-0wb">
+                                <rect key="frame" x="284" y="724" width="102" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.90207292900000002" green="0.98028999400000005" blue="0.98913382770000002" alpha="0.94344190139999995" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
@@ -334,19 +387,30 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Community" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="second" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="BR1" destination="Jl7-xj-8Uj" id="TNn-tR-Qqq"/>
+                        <outlet property="BR2" destination="yev-0i-Ogv" id="258-K4-wYB"/>
+                        <outlet property="BR3" destination="Qfd-xU-0wb" id="9fj-f0-6kn"/>
+                        <outlet property="SecondBook" destination="4qb-zH-WlH" id="bbe-oT-tao"/>
+                        <outlet property="baking" destination="h4f-cN-y1b" id="YDS-0R-Zsd"/>
                         <outlet property="book1Image" destination="GtG-gA-yhi" id="BFf-tJ-BKb"/>
                         <outlet property="book2Image" destination="ib7-ka-r4F" id="8El-6Z-fSK"/>
+                        <outlet property="booksRead" destination="Uqq-c5-kDZ" id="lQq-Ac-PXM"/>
                         <outlet property="displayImage" destination="sF2-aR-e0D" id="a1a-6f-S1O"/>
+                        <outlet property="environment" destination="ufk-jD-32f" id="ZOQ-k2-AnR"/>
+                        <outlet property="finance" destination="Hxp-JK-2r7" id="SAY-kx-SPH"/>
                         <outlet property="imageProfileButtonOutlet" destination="chQ-oO-UMf" id="vJj-5R-FEg"/>
+                        <outlet property="interests" destination="h6H-6v-vNr" id="OhJ-84-eHg"/>
+                        <outlet property="romance" destination="qhB-2P-OvN" id="rc0-cs-nyb"/>
+                        <outlet property="womenEmpowerment" destination="IU2-ph-SmU" id="np7-cC-7db"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="714.49275362318849" y="52.901785714285715"/>
         </scene>
-        <!--Profile-->
+        <!--Community-->
         <scene sceneID="NkN-7J-SYA">
             <objects>
                 <viewController id="3E3-RX-bnk" sceneMemberID="viewController">
@@ -356,7 +420,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="gyJ-13-jYI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="hdU-En-4wZ"/>
+                    <tabBarItem key="tabBarItem" title="Community" id="hdU-En-4wZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYH-EE-Dul" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -392,5 +456,6 @@
         <image name="harry_potter" width="187" height="269"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="second" width="30" height="30"/>
+        <image name="shdjfkl" width="216" height="346"/>
     </resources>
 </document>

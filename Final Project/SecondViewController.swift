@@ -64,6 +64,20 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate & 
 //    image.clipsToBounds = true
 
     
+    @IBOutlet weak var interests: UILabel!
+    
+    @IBOutlet weak var environment: UILabel!
+    
+    @IBOutlet weak var finance: UILabel!
+
+    @IBOutlet weak var romance: UILabel!
+    
+    @IBOutlet weak var womenEmpowerment: UILabel!
+    
+    @IBOutlet weak var baking: UILabel!
+    
+    
+    
     @IBOutlet weak var book1Image: UIImageView!
     
     @IBAction func book2ButtonTapped(_ sender: UIButton) {
@@ -83,9 +97,16 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate & 
     }
     
     
-
+    @IBOutlet weak var SecondBook: UIImageView!
     
-
+    
+    @IBOutlet weak var booksRead: UILabel!
+    
+    @IBOutlet weak var BR1: UIImageView!
+    
+    @IBOutlet weak var BR2: UIImageView!
+    
+    @IBOutlet weak var BR3: UIImageView!
 }
 
 
