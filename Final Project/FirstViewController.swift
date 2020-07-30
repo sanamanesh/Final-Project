@@ -4,13 +4,39 @@
 //
 //  Created by Sana Manesh on 7/29/20.
 //  Copyright © 2020 Sana Manesh. All rights reserved.
-//
 
 import UIKit
+
+import RSSelectionMenu
 
 class FirstViewController: UIViewController {
 
 // BOOK 1
+//
+//    let data: [String] = ["Top Books of the Month", "Books by Black Authors", "Systemic Racism Awareness Books", "Books for Women in STEM", "Books on Finance", "Books by Genre"]
+//    var selectedNames: [String] = []
+//    // create menu with data source -> here [String]
+//    let menu = RSSelectionMenu(dataSource: data) { (cell, name, indexPath) in
+//        cell.textLabel?.text = name
+//    }
+//    // provide selected items
+//    menu.setSelectedItems(items: selectedNames) { (name, index, selected, selectedItems) in
+//        selectedNames = selectedItems
+//    }
+//    // show - Present
+//    menu.show(from: self)
+//    // or
+//    // show - Push
+//    menu.show(style: .push, from: self)
+////
+    
+    
+    @IBOutlet weak var scrollBar: UIPickerView!
+    
+//    var pickerData: [String] = [String]()
+//
+//    pickerData = ["Top Books of the Month", "Books by Black Authors", "Systemic Racism Awareness Books", "Books for Women in STEM", "Books on Finance", "Books by Genre"]
+    
     @IBOutlet weak var booksOfMonth: UILabel!
     
     @IBOutlet weak var bookOneImage: UIImageView!
@@ -71,11 +97,29 @@ class FirstViewController: UIViewController {
     
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        // Do any additional setup after loading the view.
+//        let data: [String] = ["Top Books of the Month", "Books by Black Authors", "Systemic Racism Awareness Books", "Books for Women in STEM", "Books on Finance", "Books by Genre"]
+//        var selectedNames: [String] = []
+//        // create menu with data source -> here [String]
+//        let menu = RSSelectionMenu(dataSource: data) { (cell, name, indexPath) in
+//            cell.textLabel?.text = name
+//        }
+//        // provide selected items
+//        menu.setSelectedItems(items: selectedNames) { (name, index, selected, selectedItems) in
+//            selectedNames = selectedItems
+//        }
+//        // show - Present
+//        menu.show(from: self)
+//        // or
+//        // show - Push
+//        menu.show(style: .push, from: self)
+
+        
+        
     }
 
 
-}
+
 
