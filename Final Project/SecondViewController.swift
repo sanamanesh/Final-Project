@@ -15,16 +15,29 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate & 
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
+        self.hideKeyboardWhenTappedAround()
+        displayImage.makeRounded()
+        imageProfileButtonOutlet.isHidden = true
+
         // Do any additional setup after loading the view.
     }
    
-//    @IBOutlet weak var imageProfileButton: UIButton!
-//    @IBAction func imageProfileButton(_ sender: Any) {
-//        imageProfileButton.setImage(UIImage(systemName: "clearImage"), for: .normal)
-//       }
+  /*  @IBOutlet weak var imageProfileButton: UIButton!
+    @IBAction func imageProfileButton(_ sender: Any) {
+        imageProfileButton.setImage(UIImage(systemName: "clearImage"), for: .normal)
+       }*/
+    
+    
+    @IBOutlet weak var imageProfileButtonOutlet: UIButton!
+    @IBAction func imageProfileButtonTapped(_ sender: Any) {
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.view.tag = 102
+        present(imagePicker, animated: true, completion: nil)
+    }
     
     @IBAction func imageProfileButton(_ sender: UIButton) {
         imagePicker.sourceType = .photoLibrary
+        imagePicker.view.tag = 101
         present(imagePicker, animated: true, completion: nil)
     }
     
@@ -32,7 +45,14 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate & 
     
     internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            displayImage.image = selectedImage
+            if imagePicker.view.tag == 100 {
+                book2Image.image = selectedImage
+            } else if imagePicker.view.tag == 102 {
+                imageProfileButtonOutlet.setImage(selectedImage, for: .normal)
+                imageProfileButtonOutlet.isEnabled = false
+            } else {
+                displayImage.image = selectedImage
+            }
         }
         imagePicker.dismiss(animated: true, completion: nil)
     }
@@ -48,6 +68,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate & 
     
     @IBAction func book2ButtonTapped(_ sender: UIButton) {
         imagePicker.sourceType = .photoLibrary
+        imagePicker.view.tag = 100
         
         present(imagePicker, animated: true, completion: nil)
     }
@@ -55,11 +76,14 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate & 
     @IBOutlet weak var book2Image: UIImageView!
     
     internal func imagePicker2Controller(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            book2Image.image = selectedImage
+        if let selectedImage2 = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            book2Image.image = selectedImage2
         }
         imagePicker.dismiss(animated: true, completion: nil)
     }
+    
+    
+
     
 
 }

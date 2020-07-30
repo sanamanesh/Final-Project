@@ -167,7 +167,6 @@
                                 <state key="normal" image="hand.thumbsdown" catalog="system"/>
                                 <connections>
                                     <action selector="book1DislikeButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Dtf-hE-Iy7"/>
-                                    <action selector="book1LikeButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="kAv-BG-Bmj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2o-G2-hGa">
@@ -307,7 +306,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="book2ButtonTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="oms-b9-j7T"/>
+                                    <action selector="book2ButtonTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="mkP-7O-d8N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfD-oS-L0H">
@@ -315,6 +314,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="+"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chQ-oO-UMf">
+                                <rect key="frame" x="50" y="108" width="120" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" image="plus" catalog="system"/>
+                                <connections>
+                                    <action selector="imageProfileButtonTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Yft-Au-xII"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -331,6 +339,7 @@
                         <outlet property="book1Image" destination="GtG-gA-yhi" id="BFf-tJ-BKb"/>
                         <outlet property="book2Image" destination="ib7-ka-r4F" id="8El-6Z-fSK"/>
                         <outlet property="displayImage" destination="sF2-aR-e0D" id="a1a-6f-S1O"/>
+                        <outlet property="imageProfileButtonOutlet" destination="chQ-oO-UMf" id="vJj-5R-FEg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
